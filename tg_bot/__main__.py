@@ -35,7 +35,7 @@ PM_START_TEXT = """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of \
+I'm a sigma group management bot with a few fun extras! Have a look at the following for an idea of some of \
 the things I can help you with.
 *Main* commands available:
  - /start: start the bot
@@ -50,10 +50,10 @@ And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-It took lots of work for [my creator](t.me/SonOfLars) to get me to where I am now, and every donation helps \
+It took lots of work for [my creator](t.me/Hamzawayne) to get me to where I am now, and every donation helps \
 motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer \
-(see his bio!). He's just a poor student, so every little helps!
-There are two ways of paying him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+(see his bio!). He's just a student, so every little helps!
+There are two ways of paying him; [Buy me a cup of coffee](https://www.buymeacoffee.com/Hamzavibes), or [Direct](https//t.me/Hamzawayne)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -150,9 +150,9 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="🎉 Add me to your group", url="t.me/{}?startgroup=true".format(bot.username)),  InlineKeyboardButton(text="🤖 Make Own Admin Bot", url="https://youtu.be/W6CLKrehy6w")],
-                     [InlineKeyboardButton(text="👥 Support Group", url="https://t.me/Mo_Tech_Group"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/Mo_Tech_YT")],
-                     [InlineKeyboardButton(text="👨‍💻 Make", url="https://youtu.be/wKL90i3cjPw"), InlineKeyboardButton(text="🛠 Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
+                    [[InlineKeyboardButton(text="🎉 Add me to your group", url="t.me/{}?startgroup=true".format(bot.username)),  InlineKeyboardButton(text="☠️ Donate", url="https://www.buymeacoffee.com/Hamzavibes")],
+                     [InlineKeyboardButton(text="👥 Support Group", url="https://t.me/Sigma_Off_Topic"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/SigmaMirrorz")],
+                     [InlineKeyboardButton(text="👨‍💻 Owner", url="https://t.me/Hamzawayne"), InlineKeyboardButton(text="🛠 Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
 
     else:
         update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
