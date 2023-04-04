@@ -155,7 +155,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                      [InlineKeyboardButton(text="👨‍💻 Owner", url="https://t.me/Hamzawayne"), InlineKeyboardButton(text="🛠 Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
 
     else:
-        update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
+        update.effective_message.reply_text("I am Alive...")
 
 
 # for test purposes
